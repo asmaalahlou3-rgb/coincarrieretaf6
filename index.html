@@ -2,92 +2,87 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinCarrière | L'Élite de l'Immobilier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CoinCarrière | Réseau Elite Immobilier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
         h1, h2 { font-family: 'Playfair Display', serif; }
-        .bg-gold { background-color: #C5A059; } /* Couleur Dorée pour le bouton */
+        .bg-gold { background: linear-gradient(135deg, #C5A059 0%, #9A7B42 100%); }
         .text-gold { color: #C5A059; }
-        .bg-dark-emerald { background-color: #062C22; } /* Vert Émeraude Profond */
+        .bg-dark-emerald { background-color: #062C22; }
+        .safe-area-inset { padding-bottom: env(safe-area-inset-bottom); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-900 leading-tight">
 
-    <nav class="p-6 flex justify-between items-center bg-white shadow-sm">
-        <div class="text-2xl font-bold tracking-tighter text-dark-emerald">COIN<span class="text-gold">CARRIÈRE</span></div>
-        <a href="#form" class="hidden md:block border border-gold text-gold px-6 py-2 rounded-full font-semibold hover:bg-gold hover:text-white transition">Connexion</a>
+    <nav class="sticky top-0 z-50 p-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="text-xl font-bold tracking-tighter text-dark-emerald uppercase">COIN<span class="text-gold">CARRIÈRE</span></div>
+        <a href="#form" class="text-xs bg-dark-emerald text-white px-4 py-2 rounded-full font-bold">REJOINDRE</a>
     </nav>
 
-    <section class="relative bg-dark-emerald text-white py-20 px-6 overflow-hidden">
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <span class="uppercase tracking-widest text-gold font-semibold text-sm">Réseau Exclusif</span>
-            <h1 class="text-4xl md:text-6xl mt-4 mb-6 leading-tight">Accélérez votre carrière dans l'immobilier d'élite.</h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                Vous avez le talent. Nous avons les opportunités. Rejoignez le premier écosystème dédié aux entrepreneurs immobiliers qui redéfinissent le marché.
+    <section class="relative bg-dark-emerald text-white pt-16 pb-20 px-6 overflow-hidden">
+        <div class="relative z-10">
+            <span class="uppercase tracking-[0.2em] text-gold font-semibold text-[10px] mb-4 block">Réseau Immobilier Exclusif</span>
+            <h1 class="text-3xl md:text-5xl mb-6 leading-[1.1]">Accélérez votre carrière dans l'immobilier d'élite.</h1>
+            <p class="text-base text-gray-300 mb-8 max-w-sm">
+                Le premier écosystème B2B au Maroc pour les entrepreneurs qui redéfinissent le marché.
             </p>
-            <a href="#form" class="bg-gold text-white px-10 py-4 rounded-lg text-lg font-bold shadow-lg hover:scale-105 transition-transform inline-block">
-                Rejoignez-nous sur CoinCarrière
+            <a href="#form" class="w-full md:w-auto text-center bg-gold text-white px-8 py-4 rounded-xl text-sm font-bold shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-wider">
+                Demander mon invitation
             </a>
         </div>
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-gold opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-gold opacity-10 rounded-full blur-[80px]"></div>
     </section>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center">
-        <div>
-            <div class="text-gold text-4xl mb-4">🏆</div>
-            <h3 class="text-xl font-bold mb-2">Visibilité Premium</h3>
-            <p class="text-gray-600 text-sm">Soyez mis en avant auprès des investisseurs et agences les plus prestigieuses du pays.</p>
+    <div class="bg-white py-6 border-b border-gray-100 grid grid-cols-3 text-center">
+        <div><p class="text-xl font-bold text-dark-emerald">Casablanca</p><p class="text-[9px] uppercase text-gray-400">Siège</p></div>
+        <div><p class="text-xl font-bold text-dark-emerald">B2B</p><p class="text-[9px] uppercase text-gray-400">Focus</p></div>
+        <div><p class="text-xl font-bold text-dark-emerald">Elite</p><p class="text-[9px] uppercase text-gray-400">Audience</p></div>
+    </div>
+
+    <section class="py-16 px-6 space-y-12">
+        <div class="flex items-start space-x-4">
+            <div class="bg-gold/10 p-3 rounded-lg text-gold font-bold text-xl">01</div>
+            <div>
+                <h3 class="font-bold text-lg">Visibilité Premium</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Mise en avant auprès des investisseurs stratégiques du pays.</p>
+            </div>
         </div>
-        <div>
-            <div class="text-gold text-4xl mb-4">🤝</div>
-            <h3 class="text-xl font-bold mb-2">Réseau Décisif</h3>
-            <p class="text-gray-600 text-sm">Connectez-vous avec des partenaires stratégiques pour des projets d'envergure.</p>
-        </div>
-        <div>
-            <div class="text-gold text-4xl mb-4">📈</div>
-            <h3 class="text-xl font-bold mb-2">Outils de Croissance</h3>
-            <p class="text-gray-600 text-sm">Accédez à des datas exclusives et des outils de gestion conçus pour la performance.</p>
+        <div class="flex items-start space-x-4">
+            <div class="bg-gold/10 p-3 rounded-lg text-gold font-bold text-xl">02</div>
+            <div>
+                <h3 class="font-bold text-lg">Opportunités Off-Market</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Accédez à des actifs immobiliers avant tout le monde.</p>
+            </div>
         </div>
     </section>
 
-    <section id="form" class="py-20 bg-white px-6">
-        <div class="max-w-xl mx-auto bg-gray-50 p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100">
-            <h2 class="text-3xl text-center mb-8 text-dark-emerald">Demander votre invitation</h2>
-            <form action="#" method="POST" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-500 mb-1">Nom Complet</label>
-                    <input type="text" placeholder="Ex: Karim Benjelloun" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gold focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-500 mb-1">Email Professionnel</label>
-                    <input type="email" placeholder="nom@entreprise.com" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gold focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-500 mb-1">Spécialité</label>
-                    <select class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gold focus:outline-none">
-                        <option>Agent Immobilier Indépendant</option>
-                        <option>Promoteur / Constructeur</option>
-                        <option>Expert en Gestion de Patrimoine</option>
-                        <option>Autre</option>
-                    </select>
-                </div>
-                <button type="submit" class="w-full bg-dark-emerald text-white font-bold py-4 rounded-md mt-4 hover:bg-black transition cursor-pointer">
-                    SOUMETTRE MA CANDIDATURE
+    <section id="form" class="py-12 bg-gray-100 px-4 safe-area-inset">
+        <div class="max-w-md mx-auto bg-white p-8 rounded-3xl shadow-2xl">
+            <h2 class="text-2xl text-center mb-2 text-dark-emerald italic font-medium">Postulez au réseau</h2>
+            <p class="text-center text-gray-400 text-xs mb-8">Réservé aux professionnels du secteur immobilier</p>
+            
+            <form action="#" class="space-y-5">
+                <input type="text" placeholder="Nom Complet" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm">
+                <input type="email" placeholder="Email Professionnel" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm">
+                <select class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm appearance-none">
+                    <option>Agent / Consultant Immobilier</option>
+                    <option>Chef de Projet BTP</option>
+                    <option>Investisseur / Foncière</option>
+                </select>
+                <button type="submit" class="w-full bg-dark-emerald text-white font-bold py-5 rounded-xl shadow-lg mt-4 active:scale-95 transition-transform uppercase tracking-widest text-xs">
+                    Envoyer ma candidature
                 </button>
             </form>
-            <p class="text-[10px] text-center text-gray-400 mt-6 italic">
-                En vous inscrivant, vous acceptez d'être contacté par l'équipe CoinCarrière pour la validation de votre profil.
-            </p>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-400 text-sm">
-        &copy; 2026 CoinCarrière. Tous droits réservés. <br>
-        Le premier portail B2B pour les talents de l'immobilier.
+    <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-[0.2em]">
+        &copy; 2026 CoinCarrière &bull; Casablanca, Maroc
     </footer>
 
 </body>
 </html>
+             
