@@ -2,87 +2,89 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CoinCarrière | Réseau Elite Immobilier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinCarrière | Elite Business</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-        h1, h2 { font-family: 'Playfair Display', serif; }
-        .bg-gold { background: linear-gradient(135deg, #C5A059 0%, #9A7B42 100%); }
-        .text-gold { color: #C5A059; }
-        .bg-dark-emerald { background-color: #062C22; }
-        .safe-area-inset { padding-bottom: env(safe-area-inset-bottom); }
+        body { font-family: 'Montserrat', sans-serif; background-color: #050505; color: #ffffff; }
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .text-emerald-glow { color: #10b981; text-shadow: 0 0 15px rgba(16, 185, 129, 0.3); }
+        .border-gold { border-color: #C5A059; }
+        .bg-gold-gradient { background: linear-gradient(135deg, #C5A059 0%, #8A6D3B 100%); }
+        .input-dark { background: #111; border: 1px solid #222; color: white; }
+        .input-dark:focus { border-color: #C5A059; outline: none; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 leading-tight">
+<body class="antialiased">
 
-    <nav class="sticky top-0 z-50 p-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-gray-100">
-        <div class="text-xl font-bold tracking-tighter text-dark-emerald uppercase">COIN<span class="text-gold">CARRIÈRE</span></div>
-        <a href="#form" class="text-xs bg-dark-emerald text-white px-4 py-2 rounded-full font-bold">REJOINDRE</a>
-    </nav>
+    <section class="min-h-screen flex flex-col justify-between p-8 relative overflow-hidden">
+        
+        <div class="z-10">
+            <h2 class="font-luxury text-2xl tracking-[0.3em] border-b border-gold/30 pb-2 inline-block">
+                COIN<span class="text-emerald-glow">CARRIÈRE</span>
+            </h2>
+        </div>
 
-    <section class="relative bg-dark-emerald text-white pt-16 pb-20 px-6 overflow-hidden">
-        <div class="relative z-10">
-            <span class="uppercase tracking-[0.2em] text-gold font-semibold text-[10px] mb-4 block">Réseau Immobilier Exclusif</span>
-            <h1 class="text-3xl md:text-5xl mb-6 leading-[1.1]">Accélérez votre carrière dans l'immobilier d'élite.</h1>
-            <p class="text-base text-gray-300 mb-8 max-w-sm">
-                Le premier écosystème B2B au Maroc pour les entrepreneurs qui redéfinissent le marché.
+        <div class="z-10 mb-20">
+            <h1 class="text-4xl md:text-6xl font-light leading-tight mb-6">
+                L'IMMOBILIER <br>
+                <span class="font-bold text-emerald-glow">D'EXCEPTION</span> <br>
+                AU MAROC.
+            </h1>
+            <p class="text-gray-400 text-sm tracking-widest uppercase mb-8">
+                Réseau privé. Opportunités off-market.
             </p>
-            <a href="#form" class="w-full md:w-auto text-center bg-gold text-white px-8 py-4 rounded-xl text-sm font-bold shadow-2xl hover:scale-105 transition-transform inline-block uppercase tracking-wider">
-                Demander mon invitation
+            <a href="#register" class="bg-gold-gradient text-white px-8 py-4 rounded-none font-bold text-xs tracking-[0.2em] uppercase hover:opacity-90 transition shadow-[0_10px_30px_rgba(197,160,89,0.2)]">
+                Postuler au Réseau
             </a>
         </div>
-        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-gold opacity-10 rounded-full blur-[80px]"></div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[60%] bg-emerald-900/10 blur-[120px] rounded-full rotate-12"></div>
     </section>
 
-    <div class="bg-white py-6 border-b border-gray-100 grid grid-cols-3 text-center">
-        <div><p class="text-xl font-bold text-dark-emerald">Casablanca</p><p class="text-[9px] uppercase text-gray-400">Siège</p></div>
-        <div><p class="text-xl font-bold text-dark-emerald">B2B</p><p class="text-[9px] uppercase text-gray-400">Focus</p></div>
-        <div><p class="text-xl font-bold text-dark-emerald">Elite</p><p class="text-[9px] uppercase text-gray-400">Audience</p></div>
-    </div>
-
-    <section class="py-16 px-6 space-y-12">
-        <div class="flex items-start space-x-4">
-            <div class="bg-gold/10 p-3 rounded-lg text-gold font-bold text-xl">01</div>
-            <div>
-                <h3 class="font-bold text-lg">Visibilité Premium</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Mise en avant auprès des investisseurs stratégiques du pays.</p>
+    <section class="py-24 px-8 border-t border-white/5 bg-[#080808]">
+        <div class="grid gap-16">
+            <div class="space-y-4">
+                <span class="text-gold text-[10px] tracking-[0.4em] uppercase font-bold">01. Prestige</span>
+                <h3 class="text-2xl font-light">Accédez au cercle fermé des décideurs du secteur.</h3>
             </div>
-        </div>
-        <div class="flex items-start space-x-4">
-            <div class="bg-gold/10 p-3 rounded-lg text-gold font-bold text-xl">02</div>
-            <div>
-                <h3 class="font-bold text-lg">Opportunités Off-Market</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Accédez à des actifs immobiliers avant tout le monde.</p>
+            <div class="space-y-4">
+                <span class="text-gold text-[10px] tracking-[0.4em] uppercase font-bold">02. Vision</span>
+                <h3 class="text-2xl font-light">Des datas exclusives pour vos projets immobiliers B2B.</h3>
             </div>
         </div>
     </section>
 
-    <section id="form" class="py-12 bg-gray-100 px-4 safe-area-inset">
-        <div class="max-w-md mx-auto bg-white p-8 rounded-3xl shadow-2xl">
-            <h2 class="text-2xl text-center mb-2 text-dark-emerald italic font-medium">Postulez au réseau</h2>
-            <p class="text-center text-gray-400 text-xs mb-8">Réservé aux professionnels du secteur immobilier</p>
+    <section id="register" class="py-24 px-8 bg-black">
+        <div class="max-w-md mx-auto">
+            <h2 class="font-luxury text-3xl mb-12 text-center tracking-wider">REJOINDRE <br>L'ÉLITE</h2>
             
-            <form action="#" class="space-y-5">
-                <input type="text" placeholder="Nom Complet" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm">
-                <input type="email" placeholder="Email Professionnel" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm">
-                <select class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-1 focus:ring-gold outline-none text-sm appearance-none">
-                    <option>Agent / Consultant Immobilier</option>
-                    <option>Chef de Projet BTP</option>
-                    <option>Investisseur / Foncière</option>
-                </select>
-                <button type="submit" class="w-full bg-dark-emerald text-white font-bold py-5 rounded-xl shadow-lg mt-4 active:scale-95 transition-transform uppercase tracking-widest text-xs">
+            <form action="#" class="space-y-8">
+                <div class="relative">
+                    <input type="text" placeholder="NOM COMPLET" class="input-dark w-full p-4 text-xs tracking-widest uppercase bg-transparent border-b border-gray-800 rounded-none focus:border-gold transition-colors">
+                </div>
+                <div class="relative">
+                    <input type="email" placeholder="EMAIL PROFESSIONNEL" class="input-dark w-full p-4 text-xs tracking-widest uppercase bg-transparent border-b border-gray-800 rounded-none focus:border-gold transition-colors">
+                </div>
+                <div class="relative">
+                    <select class="input-dark w-full p-4 text-xs tracking-widest uppercase bg-transparent border-b border-gray-800 rounded-none focus:border-gold transition-colors appearance-none">
+                        <option class="bg-black">ENTREPRENEUR</option>
+                        <option class="bg-black">INVESTISSEUR</option>
+                        <option class="bg-black">AGENCE ELITE</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full py-5 bg-white text-black font-bold text-xs tracking-[0.3em] uppercase hover:bg-gold transition duration-500">
                     Envoyer ma candidature
                 </button>
             </form>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-[0.2em]">
-        &copy; 2026 CoinCarrière &bull; Casablanca, Maroc
+    <footer class="p-12 text-center border-t border-white/5">
+        <p class="text-[9px] text-gray-600 tracking-[0.5em] uppercase">CoinCarrière &copy; 2026 | Marrakech &bull; Casablanca</p>
     </footer>
 
 </body>
 </html>
-             
